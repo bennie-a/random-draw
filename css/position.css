@@ -1,0 +1,48 @@
+html, body {
+	height: 100%;
+}
+div .h1_info {
+margin-top:20px;
+}
+
+.text_right {
+	text-align:right;
+}
+
+.sidemenu {
+	background-color: #fff;
+	height: 100%;
+	padding-top: 20px;
+}
+
+.navbar-right {
+	margin-right: 10px;
+}
+
+.sidebar-nav figure {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.sidebar-nav figcaption {
+	padding-top: 8px;
+}
+
+.sidebar-nav .icon {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+
+.contents {
+	height: 100%;
+	margin-top: 80px;
+}
+
+.desc p {
+	margin-bottom:5px;
+}
+
+main {
+	margin-top: 120px;
+}
