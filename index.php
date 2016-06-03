@@ -22,7 +22,7 @@ session_start();
 	<div class="collapse navbar-collapse">
 		<ul class="nav navbar-nav navbar-right">
 			<li><a class="btn btn-warning letter_white" href="join/">会員登録</a></li>
-			<li><a class="btn btn-default">ログイン</a></li>
+			<li><a class="btn btn-default" href="login.php">ログイン</a></li>
 		</ul>
 	</div>
 </header>
