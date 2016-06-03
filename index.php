@@ -15,7 +15,7 @@ session_start();
 </head>
 
 <body>
-<header class="navbar col-md-12 navbar-default navbar-fixed-top">
+<header class="navbar col-md-12 navbar-inverse navbar-fixed-top">
 	<div class="navbar-header">
 		<a href="/" class="navbar-brand">お絵かき出題アプリ</a>
 	</div>
@@ -40,11 +40,60 @@ session_start();
 			</ul>
 		</nav>
 	</div>
-		<main class="col-md-8">
-			<article>
-				<p>紙と鉛筆の用意はできましたか？</p>
-				<p>ではさっそく始めましょう！</p>
+		<main class="col-md-10">
+			<article id="start" class="jumbotron">
+				<p class="lead">紙と鉛筆の用意はできましたか？ではさっそく始めましょう！</p>
 				<a href="#" class="btn btn-danger btn-lg">絵を描く</a>
+			</article>
+			<article class="bs-component card-list">
+						<div class="panel panel-default">
+		            <div class="panel-body">
+		              パネルの内容
+		            </div>
+								<div class="panel-footer">パネルの見出し</div>
+		        </div>
+						<div class="panel panel-default">
+		            <div class="panel-body">
+		              パネルの内容
+		            </div>
+								<div class="panel-footer">パネルの見出し</div>
+		        </div>
+						<div class="panel panel-default">
+		            <div class="panel-body">
+		              パネルの内容
+		            </div>
+								<div class="panel-footer">パネルの見出し</div>
+		        </div>
+						<div class="panel panel-default">
+		            <div class="panel-body">
+		              パネルの内容
+		            </div>
+								<div class="panel-footer">パネルの見出し</div>
+		        </div>
+						<div class="panel panel-default">
+		            <div class="panel-body">
+		              パネルの内容
+		            </div>
+								<div class="panel-footer">パネルの見出し</div>
+		        </div>
+						<div class="panel panel-default">
+		            <div class="panel-body">
+		              パネルの内容
+		            </div>
+								<div class="panel-footer">パネルの見出し</div>
+		        </div>
+						<div class="panel panel-default">
+		            <div class="panel-body">
+		              パネルの内容
+		            </div>
+								<div class="panel-footer">パネルの見出し</div>
+		        </div>
+						<div class="panel panel-default">
+		            <div class="panel-body">
+		              パネルの内容
+		            </div>
+								<div class="panel-footer">パネルの見出し</div>
+		        </div>
 			</article>
 		</main>
 </div>

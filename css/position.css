@@ -44,5 +44,27 @@ margin-top:20px;
 }
 
 main {
-	margin-top: 120px;
+	margin-top: 30px;
+}
+
+#start {
+	width: 1080px;
+	text-align: center;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+#start a {
+	padding: 8px 50px;
+}
+
+.card-list {
+	width: 1080px;
+	margin:30px auto 0;
+}
+
+.card-list > div{
+	width: 240px;
+	display: inline-block;
+	margin: 15px 10px;
 }
