@@ -20,6 +20,8 @@ if (!empty($_POST)) {
 		if ($table = mysqli_fetch_assoc($record)) {
 			// ログイン成功
 			$_SESSION['id'] = $table['id'];
+			$_SESSION['name'] = $table['name'];
+			$_SESSION['icon'] = $table['icon'];
 			$_SESSION['time'] = time();
 
 			// ログイン情報を記録する
@@ -88,7 +90,7 @@ if (!empty($_POST)) {
           <label for="save">次回からは自動的にログインする</label>
         </dd>
     </dl>
-    <input type="submit" class="btn btn-primary " value="ログイン">
+    <input type="submit" class="btn btn-success " value="ログイン">
 </form>
 </div>
 
