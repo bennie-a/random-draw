@@ -12,7 +12,10 @@ margin-top:20px;
 .sidemenu {
 	background-color: #fff;
 	height: 100%;
-	padding-top: 20px;
+	padding-top: 40px;
+	min-width: 200px;
+	padding-bottom: 32768px;
+	margin-bottom: -32768px;
 }
 
 .navbar-right {
@@ -36,19 +39,15 @@ margin-top:20px;
 
 .contents {
 	height: 100%;
-	margin-top: 80px;
+	padding-top: 80px;
+	overflow: hidden;
 }
 
 .desc p {
 	margin-bottom:5px;
 }
 
-main {
-	margin-top: 30px;
-}
-
 #start {
-	width: 1080px;
 	text-align: center;
 	padding-top:50px;
 	padding-bottom:50px;
@@ -63,7 +62,8 @@ main {
 }
 
 .card-list > div{
-	width: 240px;
+	width: 23%;
 	display: inline-block;
-	margin: 15px 10px;
+	margin: 15px 8px;
+	box-sizing: border-box;
 }
