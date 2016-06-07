@@ -1,4 +1,4 @@
-html, body {
+html, body, .container-fluid {
 	height: 100%;
 }
 div .h1_info {
@@ -10,12 +10,14 @@ margin-top:20px;
 }
 
 .sidemenu {
-	background-color: #fff;
+	background-color: #18bc9c;
 	height: 100%;
 	padding-top: 40px;
 	min-width: 200px;
 	padding-bottom: 32768px;
 	margin-bottom: -32768px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .navbar-right {
@@ -31,15 +33,29 @@ margin-top:20px;
 	padding-top: 8px;
 }
 
+.sidebar-nav ul {
+	padding-bottom: 20px;
+}
+
+.sidebar-nav {
+	padding-top: 60px;
+}
+
 .sidebar-nav .icon {
 	width: 100px;
 	height: 100px;
 	border-radius: 50px;
 }
 
+.sidebar-nav .btn_area {
+	padding-top:20px;
+	border-top:1px solid #18dd99;
+	margin:0 auto;
+	text-align: center;
+	width: 80%;
+}
+
 .contents {
-	height: 100%;
-	padding-top: 80px;
 	overflow: hidden;
 }
 
@@ -47,18 +63,9 @@ margin-top:20px;
 	margin-bottom:5px;
 }
 
-#start {
-	text-align: center;
-	padding-top:50px;
-	padding-bottom:50px;
-}
-
-#start a {
-	padding: 8px 50px;
-}
-
 .card-list {
 	margin:30px auto 0;
+	width: 90%;
 }
 
 .card-list > div{
