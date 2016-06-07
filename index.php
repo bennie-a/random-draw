@@ -13,21 +13,11 @@ session_start();
 <link href="css/base.css" rel="stylesheet" type="text/css">
 <link href="css/position.css" rel="stylesheet" type="text/css">
 <link href="css/layout.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/navi.js"></script>
 </head>
 
 <body>
-	<!-- <header class="navbar navbar-inverse navbar-fixed-top">
-		<div class="col-sm-11">
-			<div class="navbar-header">
-				<a href="/" class="navbar-brand">お絵かき出題アプリ</a>
-			</div>
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a class="btn btn-default" href="login.php">ログアウト</a></li>
-				</ul>
-			</div>
-		</div>
-	</header> -->
 <div class="container-fluid">
 	<div class="row-fluid contents">
 		<div class="sidemenu col-md-2">

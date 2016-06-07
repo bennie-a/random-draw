@@ -1,0 +1,74 @@
+a.logo {
+	background-color: #008080;
+	color :white;
+	display: block;
+	width: 100%;
+	padding: 15px 10px;
+	text-align: center;
+	font-weight: bold;
+	position: absolute;
+	top:0;
+}
+
+a.logo:hover {
+	color:#008080;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+a.btn-feature{
+	width:300px;
+	padding:15px;
+}
+
+.nav-pills {
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.sidebar-nav > ul > li > a {
+	color:white;
+}
+
+.logout {
+	color:black;
+	width: 40px;
+}
+.pic-theme-panel >.panel-body {
+	padding-top:40px;
+	text-align:center;
+	padding-bottom:50px;
+}
+
+.pic-theme-panel p{
+	font-size : 24px;
+	margin-bottom:2px;
+}
+
+.pic-theme-panel a {
+	margin-top:40px;
+}
+
+.pic-theme-panel .lead{
+	font-size : 5em;
+}
+
+.upload-panel {
+	width:80%;
+	margin:40px auto;
+}
+
+.upload-panel > *{
+	text-align:left;
+}
+
+#start {
+	text-align: center;
+	min-height: 400px;
+	padding-top: 150px;
+	vertical-align: middle;
+}
+
+#start a {
+	padding: 8px 50px;
+}
