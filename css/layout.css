@@ -1,3 +1,7 @@
+h1, h2, h3 {
+	text-align: left;
+}
+
 a.logo {
 	background-color: #008080;
 	color :white;
@@ -64,9 +68,9 @@ a.btn-feature{
 
 #start {
 	text-align: center;
-	min-height: 400px;
-	padding-top: 150px;
 	vertical-align: middle;
+	width: 95%;
+	margin: 30px auto 30px;
 }
 
 #start a {

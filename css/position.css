@@ -63,9 +63,19 @@ margin-top:20px;
 	margin-bottom:5px;
 }
 
+#contents-panel {
+	margin-top: 20px;
+}
 .card-list {
-	margin:30px auto 0;
-	width: 90%;
+	margin:0 auto;
+	width: 95%;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.readmore {
+	margin-top: 20px;
 }
 
 .card-list > div{

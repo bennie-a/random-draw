@@ -1,23 +1,23 @@
 <?php
 	error_reporting(E_ALL & ~E_NOTICE);
 	session_start();
-	// require('../dbconnect.php');
-	//
-	// $count_sql = 'SELECT COUNT(*) AS cnt FROM words';
-	// $record = mysqli_query($db, $count_sql) or die(mysqli_error($db));
-	// $table = mysqli_fetch_assoc($record);
-	// $error = null;
-	// if ($table['cnt'] > 0) {
-	// 	$word_id = rand(1, $table['cnt']);
-	// 	$sql = sprintf("SELECT word FROM words where id = %d",
-	// 		 mysqli_real_escape_string($db, $word_id));
-	// 	$record = mysqli_query($db, $sql) or die(mysqli_error($db));
-	// 	$table = mysqli_fetch_assoc($record);
-	// 	$word = $table['word'];
-	// } else {
-	// 	$error = "申し訳ありません。現在お題の準備中です。";
-	// }
+	require('../util/files.php');
+	require('../dbconnect.php');
 
+	$count_sql = 'SELECT COUNT(*) AS cnt FROM words';
+	$record = mysqli_query($db, $count_sql) or die(mysqli_error($db));
+	$table = mysqli_fetch_assoc($record);
+	$error = null;
+	if ($table['cnt'] > 0) {
+		$word_id = rand(1, $table['cnt']);
+		$sql = sprintf("SELECT word FROM words where id = %d",
+			 mysqli_real_escape_string($db, $word_id));
+		$record = mysqli_query($db, $sql) or die(mysqli_error($db));
+		$table = mysqli_fetch_assoc($record);
+		$word = $table['word'];
+	} else {
+		$error = "申し訳ありません。現在お題の準備中です。";
+	}
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -36,25 +36,9 @@
 <body>
 	<div class="container-fluid">
 		<div class="row-fluid contents">
-			<div class="sidemenu col-md-2">
-				<a class="logo" href="#">お絵かき出題アプリ</a>
-				<nav class="sidebar-nav" role="complementary">
-					<figure>
-							<img src="member_picture/<?php echo $_SESSION['icon']; ?>" class="icon" />
-							<figcaption><?php echo $_SESSION['name']; ?></figcaption>
-					</figure>
-					<ul class="nav nav-pills nav-stacked">
-						<li><a href="post/index.php">絵を描く</a></li>
-						<li><a href="#">みんなのお絵かき</a></li>
-						<li><a href="#">アップロード履歴</a></li>
-					</ul>
-					<div class="btn_area">
-						<a href="#" class="btn btn-default btn-sm">ログアウト</a>
-					</div>
-				</nav>
-			</div>
+			<?php include(get_document_root(). '/global_menu.php'); ?>
 			<main class="col-md-8">
-			<div class="panel panel-default pic-theme-panel">
+			<div id="contents-panel" class="panel panel-default pic-theme-panel">
 	            <div class="panel-body">
 	            	<?php
 	            		if (empty($error)) {

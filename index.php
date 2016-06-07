@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
 session_start();
+require('util/files.php');
 
 ?>
 <!DOCTYPE HTML>
@@ -20,80 +21,69 @@ session_start();
 <body>
 <div class="container-fluid">
 	<div class="row-fluid contents">
-		<div class="sidemenu col-md-2">
-			<a class="logo" href="#">お絵かき出題アプリ</a>
-			<nav class="sidebar-nav" role="complementary">
-				<figure>
-						<img src="member_picture/<?php echo $_SESSION['icon']; ?>" class="icon" />
-						<figcaption><?php echo $_SESSION['name']; ?></figcaption>
-				</figure>
-				<ul class="nav nav-pills nav-stacked">
-					<li><a href="post/index.php">絵を描く</a></li>
-					<li><a href="#">みんなのお絵かき</a></li>
-					<li><a href="#">アップロード履歴</a></li>
-				</ul>
-				<div class="btn_area">
-					<a href="#" class="btn btn-default btn-sm">ログアウト</a>
-				</div>
-			</nav>
-		</div>
+			<?php include(get_document_root(). '/global_menu.php'); ?>
 			<main class="col-md-10" role="main">
-				<article id="start" class="jumbotron row">
-					<p class="lead">紙と鉛筆の用意はできましたか？ではさっそく始めましょう！</p>
-					<a href="post/index.php" class="btn btn-danger btn-lg">絵を描く</a>
-				</article>
-				<div class="row">
-					<article class="bs-component card-list">
-								<div class="panel panel-default">
-				            <div class="panel-body">
-				              パネルの内容
-				            </div>
-										<div class="panel-footer">パネルの見出し</div>
-				        </div>
-								<div class="panel panel-default">
-				            <div class="panel-body">
-				              パネルの内容
-				            </div>
-										<div class="panel-footer">パネルの見出し</div>
-				        </div>
-								<div class="panel panel-default">
-				            <div class="panel-body">
-				              パネルの内容
-				            </div>
-										<div class="panel-footer">パネルの見出し</div>
-				        </div>
-								<div class="panel panel-default">
-				            <div class="panel-body">
-				              パネルの内容
-				            </div>
-										<div class="panel-footer">パネルの見出し</div>
-				        </div>
-								<div class="panel panel-default">
-				            <div class="panel-body">
-				              パネルの内容
-				            </div>
-										<div class="panel-footer">パネルの見出し</div>
-				        </div>
-								<div class="panel panel-default">
-				            <div class="panel-body">
-				              パネルの内容
-				            </div>
-										<div class="panel-footer">パネルの見出し</div>
-				        </div>
-								<div class="panel panel-default">
-				            <div class="panel-body">
-				              パネルの内容
-				            </div>
-										<div class="panel-footer">パネルの見出し</div>
-				        </div>
-								<div class="panel panel-default">
-				            <div class="panel-body">
-				              パネルの内容
-				            </div>
-										<div class="panel-footer">パネルの見出し</div>
-				        </div>
-								<a href="#" class="btn btn-default btn-lg">もっと見る→</a>
+				<div id="contents-panel" class="panel panel-default">
+					<article class="row">
+						<div id="start" class="jumbotron">
+							<p class="lead">紙と鉛筆の用意はできましたか？ではさっそく始めましょう！</p>
+							<a href="post/index.php" class="btn btn-danger btn-lg">絵を描く</a>
+						</div>
 					</article>
+					<div class="row">
+						<article class="bs-component card-list">
+							<h2>みんなのお絵かき</h2>
+									<div class="panel panel-default">
+					            <div class="panel-body">
+					              パネルの内容
+					            </div>
+											<div class="panel-footer">パネルの見出し</div>
+					        </div>
+									<div class="panel panel-default">
+					            <div class="panel-body">
+					              パネルの内容
+					            </div>
+											<div class="panel-footer">パネルの見出し</div>
+					        </div>
+									<div class="panel panel-default">
+					            <div class="panel-body">
+					              パネルの内容
+					            </div>
+											<div class="panel-footer">パネルの見出し</div>
+					        </div>
+									<div class="panel panel-default">
+					            <div class="panel-body">
+					              パネルの内容
+					            </div>
+											<div class="panel-footer">パネルの見出し</div>
+					        </div>
+									<div class="panel panel-default">
+					            <div class="panel-body">
+					              パネルの内容
+					            </div>
+											<div class="panel-footer">パネルの見出し</div>
+					        </div>
+									<div class="panel panel-default">
+					            <div class="panel-body">
+					              パネルの内容
+					            </div>
+											<div class="panel-footer">パネルの見出し</div>
+					        </div>
+									<div class="panel panel-default">
+					            <div class="panel-body">
+					              パネルの内容
+					            </div>
+											<div class="panel-footer">パネルの見出し</div>
+					        </div>
+									<div class="panel panel-default">
+					            <div class="panel-body">
+					              パネルの内容
+					            </div>
+											<div class="panel-footer">パネルの見出し</div>
+					        </div>
+									<a href="#" class="btn btn-success btn-lg readmore">もっと見る→</a>
+						</article>
+					</div>
 				</div>
 			</main>
 	</div>
