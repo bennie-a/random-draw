@@ -10,8 +10,8 @@
         <figcaption><?php echo $_SESSION['name']; ?></figcaption>
     </figure>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="post/index.php">絵を描く</a></li>
-      <li><a href="#">みんなのお絵かき</a></li>
+      <li><a href="<?php echo get_root().'post/'?>">絵を描く</a></li>
+      <li><a href="<?php echo get_root().'list/'?>">みんなのお絵かき</a></li>
       <li><a href="#">アップロード履歴</a></li>
     </ul>
     <div class="btn_area">

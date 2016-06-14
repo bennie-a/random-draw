@@ -44,6 +44,10 @@ a.btn-feature{
 	padding-bottom:50px;
 }
 
+.pic-theme-panel h1 {
+	padding-left:2%;
+}
+
 .pic-theme-panel p{
 	font-size : 24px;
 	margin-bottom:2px;
@@ -91,4 +95,3 @@ a.btn-feature{
 #start a {
 	padding: 8px 50px;
 }
-
