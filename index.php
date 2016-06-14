@@ -1,8 +1,8 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
 session_start();
+unset($_SESSION['theme']);
 require('util/files.php');
-
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -21,7 +21,7 @@ require('util/files.php');
 <body>
 <div class="container-fluid">
 	<div class="row-fluid contents">
-			<?php include(get_document_root(). '/global_menu.php'); ?>
+			<?php include(get_document_root(). 'global_menu.php'); ?>
 			<main class="col-md-10" role="main">
 				<div id="contents-panel" class="panel panel-default">
 					<article class="row">

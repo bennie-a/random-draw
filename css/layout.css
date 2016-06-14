@@ -30,7 +30,7 @@ a.btn-feature{
 	padding-right:15px;
 }
 
-.sidebar-nav > ul > li > a {
+.sidebar-nav > * {
 	color:white;
 }
 
@@ -57,13 +57,28 @@ a.btn-feature{
 	font-size : 5em;
 }
 
-.upload-panel {
+.panel-contents {
 	width:80%;
-	margin:40px auto;
+	border-top:1px solid #ddd;
+}
+
+.btn-lg {
+	min-width:250px;
+	padding:14px 0;
+}
+
+.upload-panel {
+	border-top:1px solid #ddd;
+	padding-top:40px;
+	margin:30px auto;
 }
 
 .upload-panel > *{
 	text-align:left;
+}
+
+.upload-panel input[type="submit"]{
+	margin-left:20px;
 }
 
 #start {
@@ -76,3 +91,4 @@ a.btn-feature{
 #start a {
 	padding: 8px 50px;
 }
+

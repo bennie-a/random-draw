@@ -5,7 +5,11 @@ function file_upload($file, $dir) {
 	return $image;
 }
 
+function get_root() {
+	return 'http://'.$_SERVER['SERVER_NAME'].'/random-draw/';
+}
+
 function get_document_root() {
-	return $_SERVER['DOCUMENT_ROOT'].'/github/random-draw';
+	return $_SERVER['DOCUMENT_ROOT']. '/random-draw/';
 }
 ?>

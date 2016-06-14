@@ -1,8 +1,12 @@
+<?php
+	error_reporting(E_ALL & ~E_NOTICE);
+	$dir = get_root().'/member_picture/';
+?>
 <div class="sidemenu col-md-2">
-  <a class="logo" href="#">お絵かき出題アプリ</a>
+  <a class="logo" href="<?php echo get_root(); ?>">お絵かき出題アプリ</a>
   <nav class="sidebar-nav" role="complementary">
     <figure>
-        <img src="member_picture/<?php echo $_SESSION['icon']; ?>" class="icon" />
+        <img src="<?php echo $dir.$_SESSION['icon']; ?>" class="icon" />
         <figcaption><?php echo $_SESSION['name']; ?></figcaption>
     </figure>
     <ul class="nav nav-pills nav-stacked">
