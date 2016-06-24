@@ -1,5 +1,9 @@
 <?php
 	error_reporting(E_ALL & ~E_NOTICE);
+	if (empty($_SESSION['id'])) {
+		header('Location: login.php');
+		exit();
+	}
 	$dir = get_root().'/member_picture/';
 ?>
 <div class="sidemenu col-md-2">
@@ -15,7 +19,7 @@
       <li><a href="#">アップロード履歴</a></li>
     </ul>
     <div class="btn_area">
-      <a href="#" class="btn btn-default btn-sm">ログアウト</a>
+      <a href="<?php echo get_root()."login.php?action=logout"; ?>" class="btn btn-default btn-sm">ログアウト</a>
     </div>
   </nav>
  </div><!--sidemenu -->

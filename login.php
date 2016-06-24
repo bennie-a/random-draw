@@ -3,6 +3,13 @@ error_reporting(E_ALL & ~E_NOTICE);
 session_start();
 require('dbconnect.php');
 
+if ($_REQUEST['action'] == 'logout') {
+	unset($_SESSION['id']);
+	unset($_SESSION['name']);
+	unset($_SESSION['icon']);
+	unset($_SESSION['time']);
+}
+
 if ($_COOKIE['email'] != '') {
 	$_POST['email'] = $_COOKIE['email'];
 	$_POST['password'] = $_COOKIE['password'];

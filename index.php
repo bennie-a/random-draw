@@ -4,11 +4,6 @@ session_start();
 unset($_SESSION['theme']);
 require('util/files.php');
 
-if (empty($_SESSION['id'])) {
-	header('Location: login.php');
-	exit();
-}
-
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -37,57 +32,29 @@ if (empty($_SESSION['id'])) {
 						</div>
 					</article>
 					<div class="row">
+						<h2 class="card-list-h2">みんなのお絵かき</h2>
 						<article class="bs-component card-list">
-							<h2>みんなのお絵かき</h2>
-									<div class="panel panel-default">
-					            <div class="panel-body">
-					              パネルの内容
-					            </div>
-											<div class="panel-footer">パネルの見出し</div>
-					        </div>
-									<div class="panel panel-default">
-					            <div class="panel-body">
-					              パネルの内容
-					            </div>
-											<div class="panel-footer">パネルの見出し</div>
-					        </div>
-									<div class="panel panel-default">
-					            <div class="panel-body">
-					              パネルの内容
-					            </div>
-											<div class="panel-footer">パネルの見出し</div>
-					        </div>
-									<div class="panel panel-default">
-					            <div class="panel-body">
-					              パネルの内容
-					            </div>
-											<div class="panel-footer">パネルの見出し</div>
-					        </div>
-									<div class="panel panel-default">
-					            <div class="panel-body">
-					              パネルの内容
-					            </div>
-											<div class="panel-footer">パネルの見出し</div>
-					        </div>
-									<div class="panel panel-default">
-					            <div class="panel-body">
-					              パネルの内容
-					            </div>
-											<div class="panel-footer">パネルの見出し</div>
-					        </div>
-									<div class="panel panel-default">
-					            <div class="panel-body">
-					              パネルの内容
-					            </div>
-											<div class="panel-footer">パネルの見出し</div>
-					        </div>
-									<div class="panel panel-default">
-					            <div class="panel-body">
-					              パネルの内容
-					            </div>
-											<div class="panel-footer">パネルの見出し</div>
-					        </div>
-									<a href="#" class="btn btn-success btn-lg readmore">もっと見る→</a>
+							<?php
+								for ($i = 0; $i < 10; $i++) {
+							 ?>
+							 <div class="panel panel-default">
+									 <div class="panel-body">
+										 <div class="user">
+											 <img src="http://placehold.jp/59de99/ffffff/30x30.png" alt="" />
+											 名前
+										 </div>
+										 <img src="http://placehold.jp/59de99/ffffff/180x180.png" alt="" />
+									 </div>
+									 <div class="panel-footer">
+										 「タイトル」
+									 </div>
+							 </div>
+							<?php
+								}
+							?>
+							<div class="more">
+								<a href="<?php echo get_root().'list/';?>" class="btn btn-success btn-lg readmore">もっと見る→</a>
+							</div>
 						</article>
 					</div>
 				</div>

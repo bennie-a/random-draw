@@ -71,22 +71,48 @@ margin-top:20px;
 
 #contents-panel {
 	margin-top: 20px;
+	padding-bottom:30px;
 }
 .card-list {
+	box-sizing: border-box;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	flex-wrap: -webkit-wrap;
+	width: 96%;
 	margin:0 auto;
+}
+
+h2.card-list-h2 {
 	width: 95%;
+	display: block;
+	margin: 0 auto;
+}
+
+.card-list > div.panel {
+	width: 18%;
+	margin: 8px;
+	box-sizing: border-box;
+}
+
+div.panel-body > div.user {
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+div.panel-body > div.user img{
+	border-radius: 20px;
+	width: 16%;
+	height: auto;
+}
+
+div.panel-body > img {
+	width: 100%;
+	height: auto;
+}
+
+div.more {
 	text-align: center;
-	box-sizing: border-box;
-	padding: 10px;
-}
-
-.readmore {
-	margin-top: 20px;
-}
-
-.card-list > div{
-	width: 23%;
-	display: inline-block;
-	margin: 15px 8px;
-	box-sizing: border-box;
+	width: 100%;
+	margin-top: 15px;
 }
