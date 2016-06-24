@@ -3,6 +3,12 @@ error_reporting(E_ALL & ~E_NOTICE);
 session_start();
 unset($_SESSION['theme']);
 require('util/files.php');
+
+if (empty($_SESSION['id'])) {
+	header('Location: login.php');
+	exit();
+}
+
 ?>
 <!DOCTYPE HTML>
 <html>
