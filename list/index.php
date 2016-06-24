@@ -24,6 +24,26 @@
 			<main class="col-md-10">
 			<div id="contents-panel" class="panel panel-default pic-theme-panel">
 				<h1>みんなのお絵かき</h1>
+				<article class="bs-component card-list">
+					<?php
+						for ($i = 0; $i < 30; $i++) {
+					 ?>
+					 <div class="panel panel-default">
+							 <div class="panel-body">
+								 <div class="user">
+									 <img src="http://placehold.jp/59de99/ffffff/30x30.png" alt="" />
+									 名前
+								 </div>
+								 <img src="http://placehold.jp/59de99/ffffff/180x180.png" alt="" />
+							 </div>
+							 <div class="panel-footer">
+								 「タイトル」
+							 </div>
+					 </div>
+					<?php
+						}
+					?>
+				</article>
       </div>
 			</main>
 		</div>
